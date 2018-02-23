@@ -1,0 +1,91 @@
+<body>
+
+ 
+
+  <div class="container">
+     <h1 class="font">Welcome to Registration Panel!</h1>
+    <form class="add-user">
+
+  <table align="center">
+
+    <tr>
+      <td><b>Name</b></td>
+      <td><input type="text" name="name" placeholder="Type your name" style="font-style:italic" required=""></td>
+    </tr>
+
+    <tr>  
+      <td><b>Email</b></td>
+      <td><input type="email" name="email" placeholder="Type your Email" style="font-style:italic" required=""></td>
+    </tr>
+
+
+    <tr>
+      <td><b>Phone</b></td>
+      <td><input type="number" name="phone"  placeholder="Type your phone number" required=""></td>
+    </tr>
+
+
+    <tr>
+      <td><b>DOB</b></td>
+      <td><input type="date" name="dob"  required=""></td>
+    </tr>
+
+
+
+    <tr>
+      <td></td>
+      <td ><input type="submit" name="Register" value="Submit"></td>
+    </tr>
+
+  </table>
+
+  </form>
+</div>
+
+
+
+<h1 class="font">Registered Users Lists</h1>
+      
+
+  {{> users}}
+
+</body>
+
+<template name="users">
+<div class="container" >
+  <lebel>Todo List ({{incompleteCount}})</lebel>
+       <label class="hide-completed">
+
+        <input type="checkbox" /> Hide Marked Users
+
+      </label>
+
+<table border="1" cellpadding="15" align="center" id="usr" >
+
+<tr>
+  <th>Checkbox</th>
+  <th >Name</th>
+  <th>Email</th>
+  <th>Phone</th>
+  <th>Date Of Birth</th>
+  <th>Action</th>
+</tr>
+
+
+
+  {{#each users}}
+<tr class="{{#if checked}}checked{{/if}}">
+  <td><input type="checkbox" checked="{{checked}}" class="toggle-checked"></td>
+  <td>{{name}}</td>
+  <td>{{email}}</td>
+  <td>{{phone}}</td>
+  <td>{{dob}}</td>
+  <td><a href="#" class="delete-user">Delete</a></td>
+</tr>
+  {{/each}}
+
+
+
+</table>
+</div>
+</template>

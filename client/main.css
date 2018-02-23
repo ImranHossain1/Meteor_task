@@ -1,0 +1,180 @@
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color:  #124721;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+body {
+
+  font-family: sans-serif;
+
+  background-color: #315481;
+
+  background-image: linear-gradient(to bottom, #315481, #918e82 100%);
+
+  background-attachment: fixed;
+
+ 
+
+  position: absolute;
+
+  top: 0;
+
+  bottom: 0;
+
+  left: 0;
+
+  right: 0;
+
+ 
+
+  padding: 0;
+
+  margin: 0;
+
+ 
+
+  font-size: 14px;
+
+}
+
+
+
+a{
+    color: red;
+}
+#usr {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#usr td, #usr th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#usr tr:nth-child(even){background-color: #f2f2f2;}
+#usr tr:nth-child(odd){background-color: #ddd;}
+#usr tr:hover {background-color: green;}
+
+#usr th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color:  #148e37;
+    color: white;
+}
+
+#usr td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+   
+}
+
+.font{
+    font-family: "Times New Roman", Times, serif;
+    color: #3d2a15;
+    text-align: center;
+}
+
+ 
+
+li {
+
+  position: relative;
+
+  list-style: none;
+
+  padding: 15px;
+
+  border-bottom: #eee solid 1px;
+
+}
+
+ 
+
+li .text {
+
+  margin-left: 10px;
+
+}
+
+ 
+
+.checked {
+
+  color: #888;
+   text-decoration: line-through;
+   background-color: red;
+
+}
+.container {
+
+  max-width: 600px;
+
+  margin: 0 auto;
+
+  background: #b3c4bd ;
+}
+.hide-completed {
+
+  float: right;
+
+}
+
+ 
+
